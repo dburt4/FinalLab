@@ -56,3 +56,15 @@ body{
 	width: 300px;
 	height:inherit;
 }
+
+#location-info{
+	float:right;
+	width:894px;
+	height:inherit;
+}
+
+#your-info{
+	float:left;
+	width:300px;
+	height:inherit;
+}
