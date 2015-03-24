@@ -34,7 +34,7 @@ body{
 }
 
 #bottom-section{
-	height:650px;
+	height:802px;
 }
 
 #top-bar{
@@ -47,8 +47,8 @@ body{
 
 #main-canvas{
 	float:right;
-	width:894px;
-	height:inherit;
+	width:800px;
+	height:800px;
 }
 
 #chat-area{
@@ -67,4 +67,11 @@ body{
 	float:left;
 	width:300px;
 	height:inherit;
+}
+
+#chat-history{
+	width: 280px;
+	height:570px;
+	margin: 0 auto;
+	margin-bottom: 25px;
 }
