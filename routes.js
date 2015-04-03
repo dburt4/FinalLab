@@ -10,7 +10,7 @@ module.exports = function(app) {
     //   res.render('index', {username: req.session.username,
     //                        msg:req.session.msg});
     // } else {
-`    //   req.session.msg = 'Access denied!';
+    //   req.session.msg = 'Access denied!';
     //   res.redirect('/login');
     // }
 

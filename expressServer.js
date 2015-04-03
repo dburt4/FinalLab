@@ -30,18 +30,7 @@ app.get('/', express.static('/views/home.html'));
 
 */
 
-app.post('/chat', function(req, res){
-	console.log("In POST chat route");
-	var MongoClient = require('mongodb').MongoClient;
-	MongoClient.connect("mongodb:localhost:/awesomeDB", function(err, db){
-		if(err) throw err;
-		db.collection('chat').insert(req.body, function(err, records){
-			console.log("record inserted as " + records[0]._id);
-		});
-	});
-	res.status(200);
-	res.end();
-});
+
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -76,3 +65,15 @@ app.get('/hardcodedusers', function(req, res){
 	res.end();
 });
 
+app.post('/chat', function(req, res){
+	console.log("In POST chat route");
+	var MongoClient = require('mongodb').MongoClient;
+	MongoClient.connect("mongodb:localhost:/awesomeDB", function(err, db){
+		if(err) throw err;
+		db.collection('chat').insert(req.body, function(err, records){
+			console.log("record inserted as " + records[0]._id);
+		});
+	});
+	res.status(200);
+	res.end();
+});
