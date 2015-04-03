@@ -5,15 +5,20 @@ module.exports = function(app) {
   app.use('/static', express.static( './static')).
       use('/lib', express.static( '../lib')
   );
-  app.get('/', function(req, res){
-    if (req.session.user) {
-      res.render('index', {username: req.session.username,
-                           msg:req.session.msg});
-    } else {
-      req.session.msg = 'Access denied!';
-      res.redirect('/login');
-    }
-  });
+  // app.get('/', function(req, res){
+    // if (req.session.user) {
+    //   res.render('index', {username: req.session.username,
+    //                        msg:req.session.msg});
+    // } else {
+`    //   req.session.msg = 'Access denied!';
+    //   res.redirect('/login');
+    // }
+
+  // });
+
+app.get('/', express.static('views/home.html'));
+
+
   app.get('/user', function(req, res){
     if (req.session.user) {
       res.render('user', {msg:req.session.msg});
