@@ -1,0 +1,70 @@
+<!-- 
+          _____                _____                    _____                    _____  
+         /\    \              /\    \                  /\    \                  /\    \ 
+        /::\____\            /::\    \                /::\____\                /::\____\
+       /:::/    /            \:::\    \              /::::|   |               /:::/    /
+      /:::/    /              \:::\    \            /:::::|   |              /:::/    / 
+     /:::/    /                \:::\    \          /::::::|   |             /:::/    /  
+    /:::/____/                  \:::\    \        /:::/|::|   |            /:::/    /   
+   /::::\    \                  /::::\    \      /:::/ |::|   |           /:::/    /    
+  /::::::\    \   _____        /::::::\    \    /:::/  |::|___|______    /:::/    /     
+ /:::/\:::\    \ /\    \      /:::/\:::\    \  /:::/   |::::::::\    \  /:::/    /      
+/:::/  \:::\    /::\____\    /:::/  \:::\____\/:::/    |:::::::::\____\/:::/____/       
+\::/    \:::\  /:::/    /   /:::/    \::/    /\::/    / ~~~~~/:::/    /\:::\    \       
+ \/____/ \:::\/:::/    /   /:::/    / \/____/  \/____/      /:::/    /  \:::\    \      
+          \::::::/    /   /:::/    /                       /:::/    /    \:::\    \     
+           \::::/    /   /:::/    /                       /:::/    /      \:::\    \    
+           /:::/    /    \::/    /                       /:::/    /        \:::\    \   
+          /:::/    /      \/____/                       /:::/    /          \:::\    \  
+         /:::/    /                                    /:::/    /            \:::\    \ 
+        /:::/    /                                    /:::/    /              \:::\____\
+        \::/    /                                     \::/    /                \::/    /
+         \/____/                                       \/____/                  \/____/ 
+                                                                                        
+ -->
+<DOCTYPE HTML>
+	<head>
+		<title>Our awesome web page</title>
+		<!-- Bootstrap and our own style sheets + JS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src ="main.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="Style.css" type="text/css"></style>
+		
+
+	</head>
+	
+	<body>
+		<h1> THIS IS OUR WEB APP!</h1>	
+		<div id="main-content" class="outline">
+			<div id="top-bar" class="outline">
+				<div class="outline" id="your-info">
+					Your info
+					<button type="button" class="btn btn-danger" id="submit-chat">Don't click me</button>
+				</div>
+				<div class="outline" id="location-info">
+					Location info stuff
+				</div>
+			</div>
+			<div id="bottom-section" class="outline">
+			    <div id="chat-area" class="outline">
+					
+			        <div id= "chat-history" class="outline">
+			            chat area
+			        </div>
+			        <form>
+			            Chat here:<br>
+			            <input type="text" id="chat-input"></input>
+			            <input type="submit" value="Send" id="chat-button"></input>
+			        </form>
+					
+			    </div>
+                <!-- The actual bouncing balls thingy: -->
+				<canvas id="main-canvas" width="800" height="800"class="outline">
+				    <script src="canvas.js" type="text/javascript"></script>
+                    Your browser does not support HTML canvas
+				</canvas>
+			</div>
+		</div>
+	</body>
+</HTML>
