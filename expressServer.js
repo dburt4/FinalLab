@@ -26,6 +26,10 @@ http.createServer(app).listen(80);
 
 app.get('/', express.static('/views/home.html'));
 
+
+
+*/
+
 app.post('/chat', function(req, res){
 	console.log("In POST chat route");
 	var MongoClient = require('mongodb').MongoClient;
@@ -38,8 +42,6 @@ app.post('/chat', function(req, res){
 	res.status(200);
 	res.end();
 });
-
-*/
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -65,7 +67,7 @@ app.use(expressSession({
   }));
 require('./routes')(app);
 app.listen(80);                   
-=======
+
 
 //Returns an array with 4 hard coded users for tesing purposes:
 app.get('/hardcodedusers', function(req, res){
