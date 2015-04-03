@@ -44,4 +44,9 @@ module.exports = function(app) {
   app.post('/user/delete', users.deleteUser);
   app.post('/login', users.login);
   app.get('/user/profile', users.getUserProfile);
+	app.get('/', express.static('/views/home.html'));
+
+	app.get('/chat', function(req, res){
+  	console.log("In POST chat route");
+	});
 }
