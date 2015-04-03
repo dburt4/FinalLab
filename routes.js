@@ -16,7 +16,7 @@ module.exports = function(app) {
 
   // });
 
-app.get('/', express.static('views/home.html'));
+app.get('/', express.static('/views/home.html'));
 
 
   app.get('/user', function(req, res){
